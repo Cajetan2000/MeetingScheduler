@@ -20,8 +20,8 @@ function Header() {
                 <li className='hover:text-primary transition-all duration-300 cursor-pointer'>About Us</li>
             </ul>
             <div className='flex gap-5'>
-              <LoginLink postLoginRedirectURL='/dashboard'> <Button variant="ghost">Login</Button></LoginLink> 
-               <RegisterLink postLoginRedirectURL='/dashboard'><Button>Get Started</Button></RegisterLink> 
+              <LoginLink> <Button variant="ghost">Login</Button></LoginLink> 
+               <RegisterLink ><Button>Get Started</Button></RegisterLink> 
 
             </div>
         </div>
