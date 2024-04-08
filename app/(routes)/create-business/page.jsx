@@ -16,6 +16,16 @@ function CreateBusiness() {
     const router=useRouter();
 
     const onCreateBusiness=async()=>{
+
+        await setDoc(doc(db,'Users',user.email),{
+            email:user.email,
+            userName:user.given_name+" "+user.family_name
+        }).then(resp=>{
+            console.log("User Saved");
+            toast('New User Added!');
+            
+        })
+
         console.log("btn Click",businessName);
         await setDoc(doc(db,'Business',user.email),{
             businessName:businessName,
