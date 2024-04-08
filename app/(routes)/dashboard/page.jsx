@@ -41,7 +41,7 @@ function Dashboard() {
 
   if(loading)
   {
-    return <h2>Loading...</h2>
+    return <h2>No Event!</h2>
   }
 
   return (
