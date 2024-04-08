@@ -10,9 +10,9 @@ function Header() {
         <div className='flex items-center justify-between
         p-5 shadow-sm
         '>
-            <Image src='/logo.png' width={60} height={60} alt='logo'
+            {/* <Image src='/logo.png' width={60} height={60} alt='logo'
                 className='w-[150px] md:w-[200px]'
-            />
+            /> */}
             <ul className='hidden md:flex gap-14 font-medium text-lg'>
                 <li className='hover:text-primary transition-all duration-300 cursor-pointer'>Product</li>
                 <li className='hover:text-primary transition-all duration-300 cursor-pointer'>Pricing</li>
@@ -21,7 +21,7 @@ function Header() {
             </ul>
             <div className='flex gap-5'>
               <LoginLink> <Button variant="ghost">Login</Button></LoginLink> 
-               <RegisterLink ><Button>Get Started</Button></RegisterLink> 
+               <RegisterLink><Button>Get Started</Button></RegisterLink> 
 
             </div>
         </div>
